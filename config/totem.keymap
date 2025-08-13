@@ -24,6 +24,15 @@
         };
     };
 
+    macros {
+        enne: enne {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(N) &kp N>;
+            label = "ENNE";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
