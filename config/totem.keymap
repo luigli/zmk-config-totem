@@ -22,6 +22,11 @@
             bindings = <&kp ESC>;
             key-positions = <0 1>;
         };
+
+        enne {
+            bindings = <&enne>;
+            key-positions = <18 19>;
+        };
     };
 
     macros {
