@@ -88,10 +88,10 @@
 
         cursor {
             bindings = <
-                   &kp LA(BACKSPACE)   &kp BACKSPACE  &kp UP     &kp DELETE     &kp LA(DELETE)        &kp N5           &kp RC(A)        &kp RC(E)     &kp PAGE_UP  &none
-                   &kp LA(LEFT_ARROW)  &kp LEFT       &kp DOWN   &kp RIGHT      &kp LA(RIGHT)         &kp LEFT         &kp DOWN         &kp UP_ARROW  &kp RIGHT    &kp PAGE_DOWN
-&kp LG(BACKSPACE)  &kp LG(UP_ARROW)    &kp LG(LEFT)   &kp ENTER  &kp LG(RIGHT)  &kp LG(DOWN_ARROW)    &kp PERIOD       &kp BACKSPACE    &kp DEL       &kp STAR     &kp FSLH       &kp CARET
-                                                      &trans     &trans         &trans                &kp KP_NUMBER_0  &kp RIGHT_SHIFT  &kp PERCENT
+                   &kp LA(BACKSPACE)   &kp AT_SIGN        &kp POUND        &kp DOLLAR             &kp LA(UNDERSCORE)    &kp N5           &kp HOME       &kp END       &kp PAGE_UP  &none
+                   &kp LA(LEFT_ARROW)  &kp LEFT_BRACKET   &kp LEFT_BRACE   &kp LEFT_PARENTHESIS   &kp MINUS             &kp LEFT         &kp DOWN       &kp UP_ARROW  &kp RIGHT    &kp PAGE_DOWN
+&kp LG(BACKSPACE)  &kp LG(UP_ARROW)    &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp PIPE              &kp EQUAL        &kp BACKSPACE  &kp DEL       &kp STAR     &kp FSLH       &kp CARET
+                                                          &trans           &trans                 &trans                &kp KP_NUMBER_0  &kp TAB        &kp PERCENT
             >;
         };
     };
