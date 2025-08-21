@@ -36,6 +36,13 @@
             bindings = <&kp RA(N) &kp N>;
             label = "ENNE";
         };
+
+        escritorio1: escritorio1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp R &kp LG(NUMBER_1)>;
+            label = "ESCRITORIO1";
+        };
     };
 
     behaviors {
@@ -52,10 +59,10 @@
 
         base {
             bindings = <
-           &kp Q  &kp W  &kp E       &kp R            &kp T                  &kp Y                  &kp U        &kp I          &kp O    &kp P
-           &kp A  &kp S  &kp D       &lt 0 F          &kp G                  &kp H                  &kp J        &kp K          &kp L    &kp SEMI
-&kp LCTRL  &kp Z  &kp X  &kp C       &kp V            &kp B                  &kp N                  &kp M        &kp COMMA      &kp DOT  &kp FSLH  &kp APOS
-                         &borra_mac  &lt 5 LC(ENTER)  &mt LEFT_META SPACE    &mt RIGHT_SHIFT SPACE  &lt 5 ENTER  &kp RIGHT_ALT
+               &kp Q  &kp W  &kp E       &mt LG(R) R      &mt LG(T) T            &kp Y                  &kp U        &kp I          &kp O    &kp P
+               &kp A  &kp S  &kp D       &mt LG(F) F      &mt LG(G) G            &kp H                  &kp J        &kp K          &kp L    &lt 4 SEMICOLON
+&mt LCTRL TAB  &kp Z  &kp X  &kp C       &mt LG(V) V      &kp B                  &kp N                  &kp M        &kp COMMA      &kp DOT  &kp FSLH         &kp APOS
+                             &borra_mac  &lt 5 LC(ENTER)  &mt LEFT_META SPACE    &mt RIGHT_SHIFT SPACE  &lt 5 ENTER  &kp RIGHT_ALT
             >;
         };
 
