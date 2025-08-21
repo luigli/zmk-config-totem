@@ -29,6 +29,16 @@
             bindings = <&enne>;
             key-positions = <18 19>;
         };
+
+        kF1 {
+            bindings = <&kp F1>;
+            key-positions = <27 35>;
+        };
+
+        kF2 {
+            bindings = <&kp F2>;
+            key-positions = <35 28>;
+        };
     };
 
     macros {
@@ -61,10 +71,10 @@
 
         base {
             bindings = <
-               &kp Q  &kp W  &kp E       &mt LG(NUMBER_1) R  &mt LG(NUMBER_2) T     &kp Y                  &kp U        &kp I          &kp O    &kp P
-               &kp A  &kp S  &kp D       &mt LG(NUMBER_3) F  &mt LG(NUMBER_4) G     &kp H                  &kp J        &kp K          &kp L    &lt 4 SEMICOLON
-&mt LCTRL TAB  &kp Z  &kp X  &kp C       &mt LG(N5) V        &kp B                  &kp N                  &kp M        &kp COMMA      &kp DOT  &kp FSLH         &kp APOS
-                             &borra_mac  &lt 5 LC(ENTER)     &mt LEFT_META SPACE    &mt RIGHT_SHIFT SPACE  &lt 5 ENTER  &kp RIGHT_ALT
+               &kp Q  &kp W  &mt PRINTSCREEN E  &mt LG(NUMBER_1) R  &mt LG(NUMBER_2) T     &kp Y                  &kp U        &kp I          &kp O    &kp P
+               &kp A  &kp S  &kp D              &mt LG(NUMBER_3) F  &mt LG(NUMBER_4) G     &kp H                  &kp J        &kp K          &kp L    &lt 4 SEMICOLON
+&mt LCTRL TAB  &kp Z  &kp X  &kp C              &mt LG(N5) V        &mt LC(ENTER) B        &kp N                  &kp M        &kp COMMA      &kp DOT  &kp FSLH         &kp APOS
+                             &borra_mac         &lt 5 LC(ENTER)     &mt LEFT_META SPACE    &mt RIGHT_SHIFT SPACE  &lt 5 ENTER  &kp RIGHT_ALT
             >;
         };
 
@@ -97,10 +107,10 @@
 
         num {
             bindings = <
-           &kp ESC          &kp LESS_THAN         &kp GREATER_THAN       &kp UNDERSCORE  &none          &kp F1         &kp N7             &kp N8        &kp N9        &kp PLUS
-           &kp EXCLAMATION  &kp AT_SIGN           &kp HASH               &kp DOLLAR      &kp PERCENT    &kp BACKSPACE  &kp NUMBER_4       &kp N5        &kp NUMBER_6  &kp F10
-&kp GRAVE  &kp LESS_THAN    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PERIOD      &kp PIPE       &kp F11        &mt PIPE NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp F15   &kp F16
-                                                  &trans                 &kp COLON       &trans         &kp MINUS      &kp N0             &none
+           &kp ESC          &kp LESS_THAN         &kp GREATER_THAN       &kp UNDERSCORE  &none          &kp F1         &mt AMPERSAND N7           &mt DOUBLE_QUOTES N8  &kp N9        &kp PLUS
+           &kp EXCLAMATION  &kp AT_SIGN           &kp HASH               &kp DOLLAR      &kp PERCENT    &kp BACKSPACE  &mt SINGLE_QUOTE NUMBER_4  &mt ASTRK N5          &kp NUMBER_6  &kp F10
+&kp GRAVE  &kp LESS_THAN    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PERIOD      &kp PIPE       &kp F11        &mt PIPE NUMBER_1          &kp NUMBER_2          &kp NUMBER_3  &kp F15   &kp F16
+                                                  &trans                 &kp COLON       &trans         &kp MINUS      &kp N0                     &none
             >;
         };
 
