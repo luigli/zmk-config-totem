@@ -95,10 +95,10 @@
 
         base {
             bindings = <
-               &mt PRINTSCREEN Q   &kp W    &mt PRINTSCREEN E  &mt LG(NUMBER_1) R  &mt LG(NUMBER_2) T     &kp Y                  &kp U        &kp I          &kp O    &kp P
-               &mt LEFT_CONTROL A  &lt 2 S  &kp D              &mt LG(NUMBER_3) F  &mt LG(NUMBER_4) G     &kp H                  &kp J        &kp K          &kp L    &lt 4 SEMICOLON
-&mt LCTRL TAB  &kp Z               &kp X    &kp C              &mt LG(N5) V        &mt LC(ENTER) B        &kp N                  &kp M        &kp COMMA      &kp DOT  &kp FSLH         &kp APOS
-                                            &borra_mac         &lt 5 LC(ENTER)     &mt LEFT_META SPACE    &mt RIGHT_SHIFT SPACE  &lt 5 ENTER  &kp RIGHT_ALT
+               &mt PRINTSCREEN Q   &kp W    &mt PRINTSCREEN E  &mt LG(NUMBER_1) R  &mt LG(NUMBER_2) T     &kp Y                  &doublequote  &kp I          &kp O    &kp P
+               &mt LEFT_CONTROL A  &lt 2 S  &kp D              &mt LG(NUMBER_3) F  &mt LG(NUMBER_4) G     &kp H                  &singlequote  &kp K          &kp L    &lt 4 SEMICOLON
+&mt LCTRL TAB  &kp Z               &kp X    &kp C              &mt LG(N5) V        &mt LC(ENTER) B        &kp N                  &kp M         &kp COMMA      &kp DOT  &kp FSLH         &kp APOS
+                                            &borra_mac         &lt 5 LC(ENTER)     &mt LEFT_META SPACE    &mt RIGHT_SHIFT SPACE  &lt 5 ENTER   &kp RIGHT_ALT
             >;
         };
 
