@@ -51,6 +51,20 @@
             bindings = <&kp RA(N) &kp N>;
             label = "ENNE";
         };
+
+        doblecomilla: doblecomilla {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DOUBLE_QUOTES &kp SPACE>;
+            label = "DOBLECOMILLA";
+        };
+
+        simplecomilla: simplecomilla {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SINGLE_QUOTE &kp SPACE>;
+            label = "SIMPLECOMILLA";
+        };
     };
 
     behaviors {
@@ -59,6 +73,20 @@
             label = "BORRA_MAC";
             #binding-cells = <0>;
             bindings = <&kp DEL>, <&kp LG(BACKSPACE)>;
+        };
+
+        doublequote: doublequote {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DOUBLEQUOTE";
+            #binding-cells = <0>;
+            bindings = <&kp U>, <&doblecomilla>;
+        };
+
+        singlequote: singlequote {
+            compatible = "zmk,behavior-tap-dance";
+            label = "SINGLEQUOTE";
+            #binding-cells = <0>;
+            bindings = <&kp J>, <&simplecomilla>;
         };
     };
 
