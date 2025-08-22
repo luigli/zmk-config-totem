@@ -85,6 +85,48 @@
             #binding-cells = <0>;
             bindings = <&kp J>, <&simplecomilla>;
         };
+
+        r_d1: r_d1 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "R_D1";
+            #binding-cells = <0>;
+            bindings = <&kp R>, <&kp LG(NUMBER_1)>;
+        };
+
+        t_d2: t_d2 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "T_D2";
+            #binding-cells = <0>;
+            bindings = <&kp T>, <&kp LG(NUMBER_2)>;
+        };
+
+        f_d3: f_d3 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "F_D3";
+            #binding-cells = <0>;
+            bindings = <&kp F>, <&kp LG(NUMBER_3)>;
+        };
+
+        g_d4: g_d4 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "G_D4";
+            #binding-cells = <0>;
+            bindings = <&kp G>, <&kp LG(NUMBER_4)>;
+        };
+
+        v_d5: v_d5 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "V_D5";
+            #binding-cells = <0>;
+            bindings = <&kp V>, <&kp LG(N5)>;
+        };
+
+        e_print: e_print {
+            compatible = "zmk,behavior-tap-dance";
+            label = "E_PRINT";
+            #binding-cells = <0>;
+            bindings = <&kp E>, <&kp PRINTSCREEN>;
+        };
     };
 
     keymap {
@@ -92,10 +134,10 @@
 
         base {
             bindings = <
-               &mt PRINTSCREEN Q  &kp W  &mt PRINTSCREEN E  &kp R            &kp T                  &kp Y                  &doublequote  &kp I          &kp O    &kp P
-               &kp A              &kp S  &kp D              &kp F            &kp G                  &kp H                  &singlequote  &kp K          &kp L    &lt 4 SEMICOLON
-&mt LCTRL TAB  &kp Z              &kp X  &kp C              &kp V            &kp B                  &kp N                  &kp M         &kp COMMA      &kp DOT  &kp FSLH         &kp APOS
-                                         &borra_mac         &lt 5 LC(ENTER)  &mt LEFT_META SPACE    &mt RIGHT_SHIFT SPACE  &lt 5 ENTER   &kp RIGHT_ALT
+               &kp Q  &kp W  &e_print    &r_d1            &t_d2                  &kp Y                  &doublequote  &kp I          &kp O    &kp P
+               &kp A  &kp S  &kp D       &f_d3            &g_d4                  &kp H                  &singlequote  &kp K          &kp L    &lt 4 SEMICOLON
+&mt LCTRL TAB  &kp Z  &kp X  &kp C       &v_d5            &kp B                  &kp N                  &kp M         &kp COMMA      &kp DOT  &kp FSLH         &kp APOS
+                             &borra_mac  &lt 5 LC(ENTER)  &mt LEFT_META SPACE    &mt RIGHT_SHIFT SPACE  &lt 5 ENTER   &kp RIGHT_ALT
             >;
         };
 
