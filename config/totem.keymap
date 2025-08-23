@@ -181,19 +181,19 @@
 
         base {
             bindings = <
-               &kp Q  &kp W            &e_print    &r_d1        &t_d2                  &kp Y                  &u_doublequote  &i_ampersand   &kp O    &kp P
-               &kp A  &layer_tap2 2 S  &kp D       &f_d3        &g_d4                  &kp H                  &j_singlequote  &k_asterisk    &kp L    &lt 4 SEMICOLON
-&mt LCTRL TAB  &kp Z  &kp X            &kp C       &v_d5        &b_control_enter       &kp N                  &m_pipe         &kp COMMA      &kp DOT  &kp FSLH         &kp APOS
-                                       &borra_mac  &lt 5 ENTER  &mt LEFT_META SPACE    &mt RIGHT_SHIFT SPACE  &lt 5 ENTER     &kp RIGHT_ALT
+               &kp Q            &kp W            &e_print    &r_d1        &t_d2                  &kp Y                  &u_doublequote  &i_ampersand   &kp O    &kp P
+               &layer_tap2 1 A  &layer_tap2 2 S  &kp D       &f_d3        &g_d4                  &kp H                  &j_singlequote  &k_asterisk    &kp L    &layer_tap2 4 SEMICOLON
+&mt LCTRL TAB  &kp Z            &kp X            &kp C       &v_d5        &b_control_enter       &kp N                  &m_pipe         &kp COMMA      &kp DOT  &kp FSLH                 &kp APOS
+                                                 &borra_mac  &lt 5 ENTER  &mt LEFT_META SPACE    &mt RIGHT_SHIFT SPACE  &lt 5 ENTER     &kp RIGHT_ALT
             >;
         };
 
-        nav_num {
+        linux {
             bindings = <
-                   &kp LA(BACKSPACE)   &kp BACKSPACE  &kp UP     &kp DELETE     &kp LA(DELETE)        &kp N5      &kp N6           &kp N7       &kp N8    &kp N9
-                   &kp LA(LEFT_ARROW)  &kp LEFT       &kp DOWN   &kp RIGHT      &kp LA(RIGHT)         &kp N0      &kp N1           &kp N2       &kp N3    &kp N4
-&kp LG(BACKSPACE)  &kp LG(UP_ARROW)    &kp LG(LEFT)   &kp ENTER  &kp LG(RIGHT)  &kp LG(DOWN_ARROW)    &kp PERIOD  &kp PLUS         &kp MINUS    &kp STAR  &kp FSLH  &kp CARET
-                                                      &trans     &trans         &trans                &kp EQUAL   &kp RIGHT_SHIFT  &kp PERCENT
+                   &kp LA(BACKSPACE)   &kp BACKSPACE  &kp UP     &kp LC(N1)        &kp LC(NUMBER_2)      &kp N5      &kp N6           &kp N7       &kp N8    &kp N9
+                   &kp LA(LEFT_ARROW)  &kp LEFT       &kp LC(D)  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)      &kp N0      &kp N1           &kp N2       &kp N3    &kp N4
+&kp LG(BACKSPACE)  &kp LG(UP_ARROW)    &kp LC(X)      &kp LC(C)  &kp LC(V)         &kp LG(DOWN_ARROW)    &kp PERIOD  &kp PLUS         &kp MINUS    &kp STAR  &kp FSLH  &kp CARET
+                                                      &trans     &trans            &trans                &kp EQUAL   &kp RIGHT_SHIFT  &kp PERCENT
             >;
         };
 
@@ -230,15 +230,6 @@
                    &kp LA(LEFT_ARROW)  &kp LEFT_BRACKET    &kp LEFT_BRACE       &kp LEFT_PARENTHESIS   &kp MINUS         &kp LEFT         &kp DOWN       &kp UP_ARROW  &kp RIGHT    &kp PAGE_DOWN
 &kp LG(BACKSPACE)  &kp LG(UP_ARROW)    &kp RIGHT_BRACKET   &kp RIGHT_BRACE      &kp RIGHT_PARENTHESIS  &kp PIPE          &kp EQUAL        &kp BACKSPACE  &kp DEL       &kp STAR     &kp FSLH       &kp CARET
                                                            &trans               &trans                 &trans            &kp KP_NUMBER_0  &kp TAB        &kp PERCENT
-            >;
-        };
-
-        layer_6 {
-            bindings = <
-               &mt PRINTSCREEN Q   &kp W    &mt PRINTSCREEN E  &mt LG(NUMBER_1) R  &mt LG(NUMBER_2) T     &kp Y                  &u_doublequote  &i_ampersand   &kp O    &kp P
-               &mt LEFT_CONTROL A  &lt 2 S  &kp D              &mt LG(NUMBER_3) F  &mt LG(NUMBER_4) G     &kp H                  &j_singlequote  &k_asterisk    &kp L    &lt 4 SEMICOLON
-&mt LCTRL TAB  &kp Z               &kp X    &kp C              &mt LG(N5) V        &mt LC(ENTER) B        &kp N                  &kp M           &kp COMMA      &kp DOT  &kp FSLH         &kp APOS
-                                            &borra_mac         &lt 5 LC(ENTER)     &mt LEFT_META SPACE    &mt RIGHT_SHIFT SPACE  &lt 5 ENTER     &kp RIGHT_ALT
             >;
         };
     };
