@@ -49,6 +49,11 @@
             bindings = <&doblecomilla>;
             key-positions = <16 18>;
         };
+
+        combo_enter {
+            bindings = <&kp ENTER>;
+            key-positions = <35 19>;
+        };
     };
 
     macros {
