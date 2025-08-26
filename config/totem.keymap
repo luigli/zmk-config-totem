@@ -182,8 +182,8 @@
         base {
             bindings = <
                &kp Q            &kp W            &e_print    &r_d1        &t_d2                  &kp Y                  &u_doublequote  &i_ampersand   &kp O    &kp P
-               &layer_tap2 1 A  &layer_tap2 2 S  &kp D       &f_d3        &g_d4                  &kp H                  &j_singlequote  &k_asterisk    &kp L    &layer_tap2 4 SEMICOLON
-&mt LCTRL TAB  &kp Z            &kp X            &kp C       &v_d5        &b_control_enter       &kp N                  &m_pipe         &kp COMMA      &kp DOT  &kp FSLH                 &kp APOS
+               &layer_tap2 1 A  &layer_tap2 2 S  &kp D       &f_d3        &g_d4                  &kp H                  &j_singlequote  &k_asterisk    &kp L    &lt 4 SEMICOLON
+&mt LCTRL TAB  &kp Z            &kp X            &kp C       &v_d5        &b_control_enter       &kp N                  &m_pipe         &kp COMMA      &kp DOT  &kp FSLH         &kp APOS
                                                  &borra_mac  &lt 5 ENTER  &mt LEFT_META SPACE    &mt RIGHT_SHIFT SPACE  &lt 5 SPACE     &kp RIGHT_ALT
             >;
         };
