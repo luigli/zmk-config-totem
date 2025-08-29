@@ -136,11 +136,11 @@
             bindings = <&kp V>, <&kp LG(N5)>;
         };
 
-        e_print: e_print {
+        w_print: w_print {
             compatible = "zmk,behavior-tap-dance";
-            label = "E_PRINT";
+            label = "W_PRINT";
             #binding-cells = <0>;
-            bindings = <&kp E>, <&kp PRINTSCREEN>;
+            bindings = <&kp W>, <&kp PRINTSCREEN>;
         };
 
         b_control_enter: b_control_enter {
@@ -186,9 +186,9 @@
 
         base {
             bindings = <
-               &kp Q            &kp W            &e_print    &r_d1        &t_d2                  &kp Y                  &u_doublequote  &i_ampersand   &kp O    &kp P
-               &layer_tap2 1 A  &layer_tap2 2 S  &kp D       &f_d3        &g_d4                  &kp H                  &j_singlequote  &k_asterisk    &kp L    &lt 4 SEMICOLON
-&mt LCTRL TAB  &kp Z            &kp X            &kp C       &v_d5        &b_control_enter       &kp N                  &m_pipe         &kp COMMA      &kp DOT  &kp FSLH         &kp APOS
+               &kp Q            &w_print         &kp E       &kp R        &kp T                  &kp Y                  &u_doublequote  &i_ampersand   &kp O    &kp P
+               &layer_tap2 1 A  &layer_tap2 2 S  &kp D       &kp F        &kp G                  &kp H                  &j_singlequote  &k_asterisk    &kp L    &lt 4 SEMICOLON
+&mt LCTRL TAB  &kp Z            &kp X            &kp C       &kp V        &kp B                  &kp N                  &m_pipe         &kp COMMA      &kp DOT  &kp FSLH         &kp APOS
                                                  &borra_mac  &lt 5 ENTER  &mt LEFT_META SPACE    &mt RIGHT_SHIFT SPACE  &lt 5 SPACE     &kp RIGHT_ALT
             >;
         };
@@ -198,7 +198,7 @@
                    &kp LA(BACKSPACE)   &kp LA(F)  &kp LS(LC(F))  &kp LC(N1)        &kp LC(NUMBER_2)    &kp N5      &kp N6           &kp N7       &kp N8         &kp N9
                    &kp LA(LEFT_ARROW)  &kp LC(S)  &kp LC(D)      &kp LC(NUMBER_3)  &kp LC(NUMBER_4)    &kp N0      &kp N1           &kp N2       &kp LC(LA(L))  &kp N4
 &kp LG(BACKSPACE)  &kp LG(UP_ARROW)    &kp LC(X)  &kp LC(C)      &kp LC(V)         &kp LC(B)           &kp PERIOD  &kp PLUS         &kp MINUS    &kp STAR       &kp FSLH  &kp CARET
-                                                  &kp LC(Z)      &kp LC(LS(Z))     &kp LEFT_SHIFT      &kp EQUAL   &kp RIGHT_SHIFT  &kp PERCENT
+                                                  &kp LC(Z)      &kp LC(LS(Z))     &kp LC(ENTER)       &kp EQUAL   &kp RIGHT_SHIFT  &kp PERCENT
             >;
         };
 
