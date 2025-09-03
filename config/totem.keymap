@@ -33,11 +33,13 @@
         kF1 {
             bindings = <&kp F1>;
             key-positions = <27 35>;
+            layers = <0>;
         };
 
         kF2 {
             bindings = <&kp F2>;
             key-positions = <35 28>;
+            layers = <0>;
         };
 
         singlequote {
@@ -53,6 +55,30 @@
         combo_enter {
             bindings = <&kp ENTER>;
             key-positions = <35 19>;
+        };
+
+        kF6 {
+            bindings = <&kp F6>;
+            key-positions = <35 18>;
+            layers = <0>;
+        };
+
+        kF4 {
+            bindings = <&kp F4>;
+            key-positions = <35 16>;
+            layers = <0>;
+        };
+
+        kF7 {
+            bindings = <&kp F7>;
+            key-positions = <35 6>;
+            layers = <0>;
+        };
+
+        kF8 {
+            bindings = <&kp F8>;
+            key-positions = <35 7>;
+            layers = <0>;
         };
     };
 
