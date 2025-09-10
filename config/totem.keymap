@@ -61,6 +61,11 @@
             bindings = <&mo 4>;
             key-positions = <10 34>;
         };
+
+        kF6 {
+            bindings = <&kp F6>;
+            key-positions = <35 18>;
+        };
     };
 
     macros {
