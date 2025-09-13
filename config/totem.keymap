@@ -48,7 +48,7 @@
         };
 
         doublequote {
-            bindings = <&kp DOUBLE_QUOTES>;
+            bindings = <&doblecomilla>;
             key-positions = <16 18>;
         };
 
