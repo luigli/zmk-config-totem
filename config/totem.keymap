@@ -196,6 +196,16 @@
             tapping-term-ms = <400>;
             bindings = <&mo>, <&kp>;
         };
+
+        mt2: mt2 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MT2";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+        };
     };
 
     keymap {
@@ -203,10 +213,10 @@
 
         base {
             bindings = <
-               &kp Q             &w_print         &kp E       &kp R        &kp T                  &kp Y                  &mt DOUBLE_QUOTES U  &mt AMPS I     &kp O    &kp P
-               &layer_tap2 1 A   &layer_tap2 2 S  &kp D       &kp F        &kp G                  &kp H                  &mt SINGLE_QUOTE J   &mt ASTRK K    &kp L    &lt 4 SEMICOLON
-&mt LCTRL TAB  &mt LEFT_SHIFT Z  &kp X            &kp C       &kp V        &kp B                  &kp N                  &mt PIPE M           &kp COMMA      &kp DOT  &kp FSLH         &kp APOS
-                                                  &borra_mac  &lt 5 ENTER  &mt LEFT_META SPACE    &mt RIGHT_SHIFT SPACE  &lt 5 SPACE          &kp RIGHT_ALT
+               &kp Q             &w_print         &kp E       &kp R        &kp T                  &kp Y                  &mt2 DOUBLE_QUOTES U  &mt2 AMPS I    &kp O    &kp P
+               &layer_tap2 1 A   &layer_tap2 2 S  &kp D       &kp F        &kp G                  &kp H                  &mt2 SINGLE_QUOTE J   &mt2 ASTRK K   &kp L    &lt 4 SEMICOLON
+&mt LCTRL TAB  &mt LEFT_SHIFT Z  &kp X            &kp C       &kp V        &kp B                  &kp N                  &mt2 PIPE M           &kp COMMA      &kp DOT  &kp FSLH         &kp APOS
+                                                  &borra_mac  &lt 5 ENTER  &mt LEFT_META SPACE    &mt RIGHT_SHIFT SPACE  &lt 5 SPACE           &kp RIGHT_ALT
             >;
         };
 
