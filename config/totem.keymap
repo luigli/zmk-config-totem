@@ -167,27 +167,6 @@
             bindings = <&kp B>, <&kp LC(ENTER)>;
         };
 
-        m_pipe: m_pipe {
-            compatible = "zmk,behavior-tap-dance";
-            label = "M_PIPE";
-            #binding-cells = <0>;
-            bindings = <&kp M>, <&kp PIPE>;
-        };
-
-        k_asterisk: k_asterisk {
-            compatible = "zmk,behavior-tap-dance";
-            label = "K_ASTERISK";
-            #binding-cells = <0>;
-            bindings = <&kp K>, <&kp KP_ASTERISK>;
-        };
-
-        i_ampersand: i_ampersand {
-            compatible = "zmk,behavior-tap-dance";
-            label = "I_AMPERSAND";
-            #binding-cells = <0>;
-            bindings = <&kp I>, <&kp AMPERSAND>;
-        };
-
         layer_tap2: layer_tap2 {
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_TAP2";
@@ -258,7 +237,7 @@
 
         cursor {
             bindings = <
-                   &kp LA(BACKSPACE)   &kp RA(LEFT_ARROW)  &kp RA(RIGHT_ARROW)  &kp DOLLAR             &kp UNDERSCORE    &kp N5     &kp HOME       &kp END       &kp PAGE_UP  &none
+                   &kp LA(BACKSPACE)   &kp RA(LEFT_ARROW)  &kp RA(RIGHT_ARROW)  &kp UNDERSCORE         &kp UNDERSCORE    &kp N5     &kp HOME       &kp END       &kp PAGE_UP  &none
                    &kp LA(LEFT_ARROW)  &kp LEFT_BRACKET    &kp LEFT_BRACE       &kp LEFT_PARENTHESIS   &kp MINUS         &kp LEFT   &kp DOWN       &kp UP_ARROW  &kp RIGHT    &kp PAGE_DOWN
 &kp LG(BACKSPACE)  &kp LG(UP_ARROW)    &kp RIGHT_BRACKET   &kp RIGHT_BRACE      &kp RIGHT_PARENTHESIS  &kp PIPE          &kp EQUAL  &kp BACKSPACE  &kp DEL       &kp STAR     &kp FSLH       &kp CARET
                                                            &trans               &trans                 &trans            &kp TAB    &kp TAB        &kp PERCENT
