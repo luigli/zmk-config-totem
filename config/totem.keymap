@@ -71,6 +71,11 @@
             bindings = <&kp LA(ENTER)>;
             key-positions = <33 32>;
         };
+
+        kF5 {
+            bindings = <&kp F5>;
+            key-positions = <35 17>;
+        };
     };
 
     macros {
