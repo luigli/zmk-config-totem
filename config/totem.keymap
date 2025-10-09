@@ -44,12 +44,12 @@
 
         singlequote {
             bindings = <&simplecomilla>;
-            key-positions = <16 17>;
+            key-positions = <16 13>;
         };
 
         doublequote {
             bindings = <&doblecomilla>;
-            key-positions = <16 18>;
+            key-positions = <13 6>;
         };
 
         combo_enter {
@@ -59,7 +59,7 @@
 
         capa_numeros {
             bindings = <&mo 4>;
-            key-positions = <10 34>;
+            key-positions = <34 13>;
         };
 
         altEnter {
@@ -70,6 +70,21 @@
         kF5 {
             bindings = <&kp F5>;
             key-positions = <35 17>;
+        };
+
+        asterisco {
+            bindings = <&kp ASTERISK>;
+            key-positions = <13 17>;
+        };
+
+        ampersand {
+            bindings = <&kp AMPERSAND>;
+            key-positions = <13 7>;
+        };
+
+        pipe {
+            bindings = <&kp PIPE>;
+            key-positions = <13 27>;
         };
     };
 
@@ -194,7 +209,7 @@
 
         base {
             bindings = <
-               &mt2 ESCAPE Q     &mt2 PRINTSCREEN W  &kp E       &kp R        &kp T                  &kp Y                  &mt2 DOUBLE_QUOTES U  &mt2 AMPS I    &kp O    &kp P
+               &kp Q             &mt2 PRINTSCREEN W  &kp E       &kp R        &kp T                  &kp Y                  &mt2 DOUBLE_QUOTES U  &mt2 AMPS I    &kp O    &kp P
                &layer_tap2 1 A   &layer_tap2 2 S     &kp D       &kp F        &kp G                  &kp H                  &mt2 SINGLE_QUOTE J   &mt2 ASTRK K   &kp L    &lt 4 SEMICOLON
 &mt LCTRL TAB  &mt LEFT_SHIFT Z  &kp X               &kp C       &kp V        &kp B                  &kp N                  &mt2 PIPE M           &kp COMMA      &kp DOT  &kp FSLH         &kp APOS
                                                      &borra_mac  &lt 5 ENTER  &mt LEFT_META SPACE    &mt RIGHT_SHIFT SPACE  &lt 5 SPACE           &kp RIGHT_ALT
