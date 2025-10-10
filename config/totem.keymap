@@ -218,9 +218,9 @@
 
         linux {
             bindings = <
-                   &kp LA(BACKSPACE)   &kp LA(LS(F))  &mt LS(LC(F)) RC(F)  &kp LC(N1)        &kp LC(NUMBER_2)    &kp N5          &kp N6           &kp N7       &kp LC(O)      &kp N9
-                   &kp LA(LEFT_ARROW)  &kp LC(S)      &kp LC(D)            &kp LC(NUMBER_3)  &kp LC(NUMBER_4)    &kp N0          &kp N1           &kp N2       &kp LC(LA(L))  &kp N4
-&kp LG(BACKSPACE)  &kp LG(UP_ARROW)    &kp LC(X)      &kp LC(C)            &kp LC(V)         &kp LC(B)           &kp PERIOD      &kp PLUS         &kp MINUS    &kp STAR       &kp FSLH  &kp CARET
+                   &kp LA(BACKSPACE)   &kp LA(LS(F))  &mt LS(LC(F)) RC(F)  &kp LC(N1)        &kp LC(NUMBER_2)    &kp F1          &kp F2           &kp F3       &kp LC(O)      &kp F5
+                   &kp LA(LEFT_ARROW)  &kp LC(S)      &kp LC(D)            &kp LC(NUMBER_3)  &kp LC(NUMBER_4)    &kp F6          &kp F7           &kp F8       &kp LC(LA(L))  &kp N4
+&kp LG(BACKSPACE)  &kp LG(UP_ARROW)    &kp LC(X)      &kp LC(C)            &kp LC(V)         &kp LC(B)           &kp F11         &kp PLUS         &kp MINUS    &kp STAR       &kp LC(FSLH)  &kp CARET
                                                       &kp LC(Z)            &kp LC(LS(Z))     &kp LC(ENTER)       &kp LEFT_SHIFT  &kp RIGHT_SHIFT  &kp PERCENT
             >;
         };
