@@ -209,7 +209,7 @@
 
         base {
             bindings = <
-               &kp Q              &mt2 PRINTSCREEN W  &kp E       &kp R            &kp T                  &kp Y                  &mt2 DOUBLE_QUOTES U  &mt2 AMPS I    &kp O    &kp P
+               &layer_tap2 6 Q    &mt2 PRINTSCREEN W  &kp E       &kp R            &kp T                  &kp Y                  &mt2 DOUBLE_QUOTES U  &mt2 AMPS I    &kp O    &kp P
                &layer_tap2 1 A    &layer_tap2 2 S     &kp D       &layer_tap2 4 F  &kp G                  &kp H                  &mt2 SINGLE_QUOTE J   &mt2 ASTRK K   &kp L    &lt 4 SEMICOLON
 &mt LCTRL TAB  &mt2 LEFT_SHIFT Z  &kp X               &kp C       &kp V            &kp B                  &kp N                  &kp M                 &kp COMMA      &kp DOT  &kp FSLH         &kp APOS
                                                       &borra_mac  &lt 5 ENTER      &mt LEFT_META SPACE    &mt RIGHT_SHIFT SPACE  &lt 5 SPACE           &kp RIGHT_ALT
@@ -258,6 +258,15 @@
                    &kp LA(LEFT_ARROW)  &kp LEFT_BRACKET    &kp LEFT_BRACE       &kp LEFT_PARENTHESIS   &kp MINUS         &kp LEFT   &kp DOWN       &kp UP_ARROW  &kp RIGHT    &kp PAGE_DOWN
 &kp LG(BACKSPACE)  &kp LG(UP_ARROW)    &kp RIGHT_BRACKET   &kp RIGHT_BRACE      &kp RIGHT_PARENTHESIS  &kp PIPE          &kp EQUAL  &kp BACKSPACE  &kp DEL       &kp STAR     &kp FSLH       &kp CARET
                                                            &trans               &trans                 &trans            &kp TAB    &kp TAB        &kp PERCENT
+            >;
+        };
+
+        cursor_izq {
+            bindings = <
+        &trans  &kp LEFT  &kp UP_ARROW  &kp RIGHT  &trans    &trans  &trans  &trans  &trans  &trans
+        &trans  &trans    &kp DOWN      &trans     &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans    &trans        &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                          &trans        &trans     &trans    &trans  &trans  &trans
             >;
         };
     };
