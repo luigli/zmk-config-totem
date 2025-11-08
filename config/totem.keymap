@@ -109,6 +109,13 @@
             bindings = <&kp SINGLE_QUOTE &kp SPACE>;
             label = "SIMPLECOMILLA";
         };
+
+        guardar_captura: guardar_captura {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LS(NUMBER_4))>;
+            label = "GUARDAR_CAPTURA";
+        };
     };
 
     behaviors {
@@ -209,10 +216,10 @@
 
         base {
             bindings = <
-               &layer_tap2 6 Q    &mt2 PRINTSCREEN W  &kp E       &kp R            &kp T                  &kp Y                  &mt2 DOUBLE_QUOTES U  &mt2 AMPS I    &kp O    &kp P
-               &layer_tap2 1 A    &layer_tap2 2 S     &kp D       &layer_tap2 4 F  &kp G                  &kp H                  &mt2 SINGLE_QUOTE J   &mt2 ASTRK K   &kp L    &lt 4 SEMICOLON
-&mt LCTRL TAB  &mt2 LEFT_SHIFT Z  &kp X               &kp C       &kp V            &kp B                  &kp N                  &kp M                 &kp COMMA      &kp DOT  &kp FSLH         &kp APOS
-                                                      &borra_mac  &lt 5 ENTER      &mt LEFT_META SPACE    &mt RIGHT_SHIFT SPACE  &lt 5 SPACE           &kp RIGHT_ALT
+               &layer_tap2 6 Q    &mt2 PRINTSCREEN W  &mt2 LG(RS(NUMBER_4)) E  &kp R            &kp T                  &kp Y                  &mt2 DOUBLE_QUOTES U  &mt2 AMPS I    &kp O    &kp P
+               &layer_tap2 1 A    &layer_tap2 2 S     &kp D                    &layer_tap2 4 F  &kp G                  &kp H                  &mt2 SINGLE_QUOTE J   &mt2 ASTRK K   &kp L    &lt 4 SEMICOLON
+&mt LCTRL TAB  &mt2 LEFT_SHIFT Z  &kp X               &kp C                    &kp V            &kp B                  &kp N                  &kp M                 &kp COMMA      &kp DOT  &kp FSLH         &kp APOS
+                                                      &borra_mac               &lt 5 ENTER      &mt LEFT_META SPACE    &mt RIGHT_SHIFT SPACE  &lt 5 SPACE           &kp RIGHT_ALT
             >;
         };
 
